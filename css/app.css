@@ -1,0 +1,61 @@
+@import url("bootstrap.min.css");
+@import url("bootstrap-theme.min.css");
+
+.loading {
+    display: none;
+    z-index: 9999;
+}
+
+.loading .backdrop {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.05;
+    z-index: 8888;
+    top: 0;
+    left: 0;
+}
+
+.loading .spin {
+    background:url(../images/spinner-light.gif) no-repeat center center;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    z-index: 8889;
+    left: 40%;
+    top: 30%;
+}
+
+.template {
+    background-color:#6f5499;
+    padding:15px;
+}
+
+.head {
+    background-color:#6f5499;
+    padding:15px;
+    color: white;
+}
+
+.container {
+    margin: 20px auto;
+    width: 97%;
+}
+
+.user-table {
+    margin-top: 20px;
+}
+
+#credits {
+    width: 520px;
+    margin: 30px auto;
+    color: #999;
+    text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+    text-align: center;
+}
+#credits a {
+    color: #888;
+}
+
+

@@ -1,0 +1,23 @@
+<div style="margin-bottom:20px" class="alert alert-info">
+    RegisterUser: <%= user %>
+    <span class="glyphicon btn" ng-class="{'glyphicon-eye-open': isOpen, 'glyphicon-eye-close': !isOpen}" ng-click="isOpen = !isOpen" ng-init='isOpen=false' data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo"></span>
+</div>
+
+
+<hr>
+<div id="collapseTwo" class="panel-collapse collapse">
+    <pre>
+        <code ng-non-bindable> 
+        <b>JS:</b> 
+            $scope.user = {
+                name: "name",
+                age = Math.round(Math.random()*100)
+            }
+
+        <b>HTML:</b>
+            RegisterUser: {{user | json}}
+            Name: &lt;input type="text" ng-model="user.name" /&gt;
+            Age: &lt;input type="text" ng-model="user.age" /&gt;
+        </code>
+    </pre>
+</div>
